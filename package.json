@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/carlosv4150/protractor-auto-estudio#readme",
   "dependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.4.1",
     "ts-node": "^7.0.1"
   },
