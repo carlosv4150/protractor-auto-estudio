@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
-    "test": "npm run lint && npm run test:headless",
+    "test": "npm run lint && npm run test:local",
     "test:local": "npm run build && protractor dist/protractor/local.config.js",
     "test:headless": "npm run build && protractor dist/protractor/headless.config.js",
     "postinstall": "webdriver-manager update --gecko false",
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/carlosv4150/protractor-auto-estudio#readme",
   "dependencies": {
+    "@types/cucumber": "^4.0.4",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.4.1",
     "ts-node": "^7.0.1",
@@ -35,7 +36,12 @@
   "devDependencies": {
     "@types/jasminewd2": "^2.0.6",
     "@types/node": "^10.12.18",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^4.0.4",
     "npm": "^6.7.0",
+    "protractor-cucumber-framework": "^6.1.1",
     "typescript": "^3.2.2"
   }
 }

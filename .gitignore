@@ -123,4 +123,7 @@ $RECYCLE.BIN/
 # Typescript
 dist
 
+# Cucumber Reports
+reports
+
 # End of https://www.gitignore.io/api/node,windows,visualstudiocode
